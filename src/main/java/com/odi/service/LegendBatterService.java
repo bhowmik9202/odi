@@ -40,14 +40,16 @@ public class LegendBatterService {
             Optional<Team> teamOptional = teamService.findById(legendBatter.getTeam().getId());
             if (teamOptional.isPresent()) {
                 team = teamOptional.get();
+            } else {
+                throw new RuntimeException("No team found with id --> " + legendBatter.getTeam().getId());
             }
-
             TeamResponseDTO teamResponseDTO = new TeamResponseDTO();
             teamResponseDTO.setTeamId(team.getId());
             teamResponseDTO.setTeamName(team.getTeamName());
             teamResponseDTO.setTeamPosition(team.getPosition());
             teamResponseDTO.setTeamPoints(team.getPoints());
             teamResponseDTO.setTeamRating(team.getRating());
+
             dto.setTeamResponseDTO(teamResponseDTO);
 
             legendBatterResponse.add(dto);
