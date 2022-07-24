@@ -16,4 +16,8 @@ public class LegendBowlerService {
     public List<LegendBowler> getAllV1() {
         return legendBowlerRepository.findAll();
     }
+
+    public List<LegendBowler> getAllVV2() {
+        return null;
+    }
 }

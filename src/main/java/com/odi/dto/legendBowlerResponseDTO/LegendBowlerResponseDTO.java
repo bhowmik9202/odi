@@ -1,4 +1,4 @@
-package com.odi.dto.legendBatterResponseDTO;
+package com.odi.dto.legendBowlerResponseDTO;
 
 import com.odi.dto.teamResponseDTO.TeamResponseDTO;
 import lombok.Data;
@@ -6,12 +6,12 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 @Data
-public class LegendBatterResponseDTO {
+public class LegendBowlerResponseDTO {
     private Long id;
-    private String batterName;
+    private String bowlerName;
     private int matches;
-    private int fifties;
-    private int hundreds;
+    private int wickets;
     private BigDecimal avg;
+    private BigDecimal econ;
     private TeamResponseDTO teamResponseDTO;
 }
