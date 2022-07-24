@@ -38,4 +38,18 @@ public class LegendBatter {
     @JoinColumn(name = "team_id")
     @JsonIgnore
     private Team team;
+
+    @Transient
+    private Long teamId;
+
+    public Long getTeamId() {
+        return team.getId();
+    }
+
+    @Transient
+    private String teamName;
+
+    public String getTeamName() {
+        return team.getTeamName();
+    }
 }
