@@ -13,5 +13,5 @@ public class LegendBatterResponseDTO {
     private int fifties;
     private int hundreds;
     private BigDecimal avg;
-    TeamResponseDTO teamResponseDTO;
+    private TeamResponseDTO teamResponseDTO;
 }
