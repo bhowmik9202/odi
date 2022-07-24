@@ -1,5 +1,6 @@
 package com.odi.controller.legendBatter;
 
+import com.odi.dto.legendBatterResponseDTO.LegendBatterResponseDTO;
 import com.odi.model.LegendBatter;
 import com.odi.service.LegendBatterService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,4 +20,11 @@ public class LegendBatterController {
     public List<LegendBatter> getAllV1() {
         return legendBatterService.getAllV1();
     }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/get-all-v2")
+    public List<LegendBatterResponseDTO> getAllV2() {
+        return legendBatterService.getAllV2();
+    }
+
+
 }

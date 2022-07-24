@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TeamService {
@@ -31,5 +32,10 @@ public class TeamService {
             teamResponse.add(dto);
         }
         return teamResponse;
+    }
+
+
+    public Optional<Team> findById(Long id) {
+        return teamRepository.findById(id);
     }
 }
