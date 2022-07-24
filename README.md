@@ -14,3 +14,6 @@ localhost:8080/legend-bowler/get-all-v1 --> modified
 
 branch : phase-04\
 localhost:8080/legend-batter/get-all-v2
+
+branch : phase-05\
+localhost:8080/legend-bowler/get-all-v2
