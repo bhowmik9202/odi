@@ -26,5 +26,4 @@ public class LegendBatterController {
         return legendBatterService.getAllV2();
     }
 
-
 }

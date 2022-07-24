@@ -1,5 +1,6 @@
 package com.odi.controller.legendBowler;
 
+import com.odi.dto.legendBowlerResponseDTO.LegendBowlerResponseDTO;
 import com.odi.model.LegendBowler;
 import com.odi.service.LegendBowlerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class LegendBowlerController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/get-all-v2")
-    public List<LegendBowler> getAllVV2() {
+    public List<LegendBowlerResponseDTO> getAllVV2() {
         return legendBowlerService.getAllVV2();
     }
 }
