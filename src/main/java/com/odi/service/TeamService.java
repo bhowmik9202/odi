@@ -34,7 +34,6 @@ public class TeamService {
         return teamResponse;
     }
 
-
     public Optional<Team> findById(Long id) {
         return teamRepository.findById(id);
     }
